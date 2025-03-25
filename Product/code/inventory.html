@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instrument Inventory</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet"href="navigationbar.css"/>
+    <link rel="stylesheet" href="inventory.css">
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+
+    <script src="script.js" defer></script> <!-- Linking to the external JavaScript file -->
+
+  </head>
+  <body>
+    
+<!-- Navbar Section -->
+<nav class="navbar">
+  <div class="navbar__container">
+    <a href="index.html" id="navbar__logo">NOTEWORTHY</a>
+    <img src="/images/musiclogo.png" alt="note" style="width: 175px; height: 75px; margin-left: -55px; margin-top: 2px;" class="navbar__container" />
+        
+
+    <ul class="navbar__menu">
+      <li class="navbar__item">
+        <a href="index.html" class="navbar__links" id="home-page">Home</a>
+      </li>
+      <li class="navbar__item">
+        <a href="inventory.html" class="navbar__links" id="inventory-page">Inventory</a>
+      </li>
+      <li class="navbar__item">
+        <a href="team.html" class="navbar__links" id="team-page">Team</a>
+      </li>
+      <li class="navbar__btn">
+        <a href="contact.html" class="button" id="contact">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <!--Additional Info -->
+  <section class="info-image-section">
+  </section>
+
+  <div class="info-text-section">
+    <br>
+    <h2>What We Offer</h2>
+    <p>We have high-quality instruments that have been cleaned and are ready to use. </p>
+    <p>Check out our inventory below and fill out our form if you are interested in an instrument!</p>
+    <br>
+  </div>
+  
+
+    <!-- Inventory Section -->
+<section class="search-section">
+  <div class="search-container">
+    <div>
+       <h1>Instrument Inventory</h1>
+    
+    </div>
+    <div>
+    <input type="text" id="searchBox" placeholder="Search inventory..." onkeyup="searchInventory()" class="search-box">
+    </div>
+
+  </div>
+</section>
+        
+    
+        <!-- Inventory Table -->
+        <div id="inventoryTable"></div>
+        <div id="paginationControls" class="pagination-container"></div>    
+          <br> 
+          <br>
+        <div class="instrument-request-btn-container">
+          <button class="instrument-request-btn">
+              <a href="form.html">Request An Instrument</a>
+          </button>
+      </div>
+  </body>
+</html>

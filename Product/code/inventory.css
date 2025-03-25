@@ -1,0 +1,258 @@
+/*----------------------------
+Inventory page
+-----------------------------*/
+    
+    .info-image-section {
+        position: relative; 
+        background-image: url('/images/Musictwo.jpg'); /* Background Image */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white; 
+        height: 180px;
+        display: flex;
+        align-items: flex-end; 
+        justify-content: center;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      }
+      
+      .info-image-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4); 
+      }
+      
+      .info-image-section * {
+        position: relative;
+        z-index: 2;
+      }
+      
+      .info-text-section {
+        background-color: rgb(229, 240, 246);
+        text-align: center;
+        padding: 30px 40px;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        font-weight: 400;
+        font-family: 'Arial', sans-serif; 
+        border-radius: 10px;
+        max-width: 900px;
+        margin: 40px auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      
+      .info-text-section h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+      
+      /* Inventory Section */
+      .search-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        background: #f9f9f9;
+        margin-top: 40px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+      
+      .search-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        width: 80%; 
+      }
+      
+      .search-box {
+        padding: 12px 15px;
+        font-size: 1rem;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        width: 300px;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      
+      /* Focus and hover effects for search box */
+      
+      .search-container {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+      }
+      
+      .search-box {
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 250px;
+        position: relative;
+      }
+/*----------------------------
+Inventory page - table
+-----------------------------*/
+      .inventory-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        font-size: 1.2rem;
+        text-align: left;
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .inventory-table th, .inventory-table td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+      }
+      .inventory-table th {
+        background: #085d8a;
+        color: white;
+      }
+      .inventory-table tr:hover {
+        background: #f0f0f0;
+      }
+    
+      .pagination-container {
+      text-align: center;
+      margin-top: 20px;
+      }
+      
+      .pagination-btn {
+      background: #085d8a;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      margin: 0 5px;
+      cursor: pointer;
+      border-radius: 4px;
+      }
+      
+      .pagination-btn.active {
+      background: #063b5b;
+      }
+      
+      .pagination-btn:hover {
+      background: #063b5b;
+      }
+    
+    .instrument-request-btn-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 10px;
+      }
+      
+      .instrument-request-btn {
+      background: #085d8a;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+      }
+      
+      .instrument-request-btn:hover {
+      background: #063b5b;
+      }
+      
+      .instrument-request-btn a {
+      text-decoration: none;
+      color: white;
+      }
+
+/*----------------------------
+Instrument request form page
+-----------------------------*/
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form-title {
+    text-align: center;
+    color: #085d8a;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    }
+    
+    .form-group {
+    margin-bottom: 20px;
+    }
+    
+    .form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    }
+    
+    .form-input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    }
+    
+    textarea {
+    resize: vertical;
+    height: 100px;
+    }
+    
+    .radio-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+    }
+    
+    .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #085d8a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    }
+    
+    .submit-btn:hover {
+    background: #063b5b;
+    }
+    
+    .thank-you-message {
+    display: none;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #085d8a;
+    margin-top: 20px;
+    }
+    
+    
+    
+      
+      

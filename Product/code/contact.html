@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Information</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navigationbar.css">
+    <link rel="stylesheet" href="inventory.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="team.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+
+    <script src="script.js" defer></script> <!-- Linking to the external JavaScript file -->
+
+  </head>
+  <body>
+<!-- Navbar Section -->
+<nav class="navbar">
+  <div class="navbar__container">
+    <a href="index.html" id="navbar__logo">NOTEWORTHY</a>
+    <img src="/images/musiclogo.png" alt="note" style="width: 175px; height: 75px; margin-left: -55px; margin-top: 2px;" class="navbar__container" />
+    <div class="navbar__toggle" id="mobile-menu">
+      <span class="bar"></span> <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="navbar__menu">
+      <li class="navbar__item">
+        <a href="index.html" class="navbar__links" id="home-page">Home</a>
+      </li>
+      <li class="navbar__item">
+        <a href="inventory.html" class="navbar__links" id="inventory-page">Inventory</a>
+      </li>
+      <li class="navbar__item">
+        <a href="team.html" class="navbar__links" id="team-page">Team</a>
+      </li>
+      <li class="navbar__btn">
+        <a href="contact.html" class="button" id="contact">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    
+<!-- Contact Section -->
+<section class="contact">
+  <h1>Contact Us</h1>
+  <br>
+  <p>We would love to hear from you!</p>
+  <br>
+
+  <div class="contact-container">
+      <!-- Email Section -->
+      <div class="contact-box email-section">
+          <h3>Email Us</h3>
+          <br>
+          <img src="../images/emailicon.jpg" alt="Email Icon" class="email-icon">
+          <br>
+          <p><strong>Mary Lee</strong></p>
+          <a href="mailto:ml.noteworthy@gmail.com">ml.noteworthy@gmail.com</a>
+          <br>
+          <br>
+          <p><strong>Shweta Sundar</strong></p>
+          <a href="mailto:ss.noteworthy@gmail.com">ss.noteworthy@gmail.com</a>
+      </div>
+
+      <!-- Social Media Section -->
+      <div class="contact-box social-section">
+          <h3>Follow Us</h3>
+          <br>
+          <a href="https://facebook.com" target="_blank">
+              <img src="../images/facebookicon.png" alt="Facebook Icon" class="facebook-icon">
+          </a>  
+          <br>
+          <p>Stay connected on social media</p>
+      </div>
+  </div>
+</section>
+  </body>
+</html>

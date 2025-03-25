@@ -1,0 +1,28 @@
+/*----------------------------
+Team page
+-----------------------------*/
+.team-section {
+    text-align: center;
+    padding: 40px 20px;
+    }
+    
+    .team-title {
+    font-size: 2.5rem;
+    color: #085d8a;
+    margin-bottom: 20px;
+    }
+    
+    .team-container {
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    }
+    
+    .team-photo {
+    width: 2in;
+    height: 3in;
+    object-fit: cover;
+    border-radius: 8px;
+    }
+    
+   

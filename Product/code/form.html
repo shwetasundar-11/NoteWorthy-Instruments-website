@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoteWorthy Instrument Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navigationbar.css">
+    <link rel="stylesheet" href="inventory.css">
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+
+    <script src="script.js" defer></script> <!-- Linking to the external JavaScript file -->
+
+  </head>
+  <body>
+<!-- Navbar Section -->
+<nav class="navbar">
+  <div class="navbar__container">
+    <a href="index.html" id="navbar__logo">NOTEWORTHY</a>
+    <img src="/images/musiclogo.png" alt="note" style="width: 175px; height: 75px; margin-left: -55px; margin-top: 2px;" class="navbar__container" />
+    <div class="navbar__toggle" id="mobile-menu">
+      <span class="bar"></span> <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="navbar__menu">
+      <li class="navbar__item">
+        <a href="index.html" class="navbar__links" id="home-page">Home</a>
+      </li>
+      <li class="navbar__item">
+        <a href="inventory.html" class="navbar__links" id="inventory-page">Inventory</a>
+      </li>
+      <li class="navbar__item">
+        <a href="team.html" class="navbar__links" id="team-page">Team</a>
+      </li>
+      <li class="navbar__btn">
+        <a href="contact.html" class="button" id="contact">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    
+<div class="form-container">
+  <h1 class="form-title">NoteWorthy Instrument Application</h1>
+  <p>Hello! Thank you so much for reaching out to NoteWorthy! Please fill out the form below so we can try to connect you with an instrument(s). We have a limited number of violins, violas, and clarinets.</p>
+  <br>
+  <p>If you are able, there is a $20 deposit on each of our instruments. You can use the instrument(s) for as long as you'd like, and when you no longer need it, you can return it and get your deposit back. This is to ensure that Noteworthy is sustainable and can assist many students with our limited instrument supply over the years.</p>
+  <br>
+  <form id="instrumentApplicationForm">
+      <div class="form-group">
+          <label for="fullName">What is your full name?</label>
+          <input type="text" id="fullName" name="fullName" required class="form-input">
+      </div>
+      
+      <div class="form-group">
+          <label for="email">What is the best email address we should use to contact you?</label>
+          <input type="email" id="email" name="email" required class="form-input">
+      </div>
+      
+      <div class="form-group">
+          <label for="benefit">Due to strong demand, please describe how one of our instruments would benefit you or your family.</label>
+          <textarea id="benefit" name="benefit" required class="form-input"></textarea>
+      </div>
+      
+      <div class="form-group">
+          <label for="residence">What town do you currently reside in?</label>
+          <input type="text" id="residence" name="residence" required class="form-input">
+      </div>
+      
+      <div class="form-group">
+          <label>How many instruments would you like? (Limit 2 per family)</label>
+          <div class="radio-group">
+              <label><input type="radio" name="instrumentCount" value="1" required> 1</label>
+              <label><input type="radio" name="instrumentCount" value="2"> 2</label>
+          </div>
+      </div>
+      
+      <div class="form-group">
+          <label for="instrumentChoice">Which instrument would your student prefer?</label>
+          <select id="instrumentChoice" name="instrumentChoice" required>
+              <option value="violin">Violin</option>
+              <option value="viola">Viola</option>
+              <option value="clarinet">Clarinet</option>
+          </select>
+      </div>
+      
+      <div class="form-group">
+          <label for="studentName">What is the full name of the student who will be using the instrument?</label>
+          <input type="text" id="studentName" name="studentName" required class="form-input">
+      </div>
+      
+      <div class="form-group">
+          <label for="studentGrade">What grade is the student in?</label>
+          <input type="text" id="studentGrade" name="studentGrade" required class="form-input">
+      </div>
+      
+      <div class="form-group">
+          <label for="howHeard">How did you hear about NoteWorthy?</label>
+          <textarea id="howHeard" name="howHeard" required class="form-input"></textarea>
+      </div>
+      
+      <button type="submit" class="submit-btn">Submit</button>
+  </form>
+
+  <div id="thankYouMessage" class="thank-you-message">Thank you for using NoteWorthy! We appreciate your time.</div>
+</div>
+
+
+
+  </body>
